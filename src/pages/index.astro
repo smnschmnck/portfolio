@@ -1,9 +1,79 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { ArrowRight } from "@lucide/astro";
+
+type Technology = "TS" | "GO";
+
+type Project = {
+  title: string;
+  description: string;
+  technologies: Technology[];
+  href: string;
+};
+
+const projects: Project[] = [
+  {
+    title: "emyht",
+    description: "realtime chat application",
+    technologies: ["TS", "GO"],
+    href: "emyht.com",
+  },
+  {
+    title: "emyht",
+    description: "realtime chat application",
+    technologies: ["TS", "GO"],
+    href: "emyht.com",
+  },
+  {
+    title: "emyht",
+    description: "realtime chat application",
+    technologies: ["TS", "GO"],
+    href: "emyht.com",
+  },
+  {
+    title: "emyht",
+    description: "realtime chat application",
+    technologies: ["TS", "GO"],
+    href: "emyht.com",
+  },
+];
 ---
 
 <Layout>
-  <main>
-    <div class="text-2xl">Hello World!</div>
+  <main class="flex flex-col gap-18 p-18">
+    <a href="/" class="text-lg font-medium">simon schmeinck</a>
+    <div class="flex flex-col gap-8 px-6">
+      <h1 class="text-4xl font-bold">personal projects</h1>
+      <ul class="grid-cols-auto-fill grid w-full gap-8">
+        {
+          projects.map((project) => (
+            <li>
+              <div class="flex flex-col gap-8 rounded-2xl bg-zinc-50 p-8">
+                <div class="flex flex-col">
+                  <span class="text-xl font-bold">{project.title}</span>
+                  <span class="font-light">{project.description}</span>
+                </div>
+                <div class="flex w-full items-center justify-between">
+                  <div class="flex w-fit items-center justify-center gap-2 rounded-lg bg-zinc-200 p-2">
+                    {project.technologies.map((tech) => (
+                      <div class="flex max-h-6 min-h-6 max-w-6 min-w-6 items-center justify-center rounded-md bg-black text-xs text-white">
+                        {tech}
+                      </div>
+                    ))}
+                  </div>
+                  <a
+                    href={project.href}
+                    class="flex h-10 items-center justify-center gap-2 rounded-lg bg-black px-4 text-white"
+                  >
+                    <span>view</span>
+                    <ArrowRight size={18} />
+                  </a>
+                </div>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </main>
 </Layout>
