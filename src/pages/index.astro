@@ -1,46 +1,7 @@
 ---
 import ProjectCard from "../components/ProjectCard.astro";
+import { projects } from "../data/projects";
 import Layout from "../layouts/Layout.astro";
-import type { Project } from "../types/project";
-
-const projects: Project[] = [
-  {
-    title: "emyht",
-    description: "realtime chat application",
-    technologies: ["TS", "GO"],
-    href: "https://emyht.com",
-  },
-  {
-    title: "bpm",
-    description: "simple bpm tapper",
-    technologies: ["TS"],
-    href: "https://bpm.s12k.de/",
-  },
-  {
-    title: "roundest",
-    description: "vote for the roundest pokémon",
-    technologies: ["GO"],
-    href: "https://roundest.s12k.de/",
-  },
-  {
-    title: "acme store",
-    description: "e-commerce store without client side javascript",
-    technologies: ["TS"],
-    href: "https://acme-store.s12k.de/",
-  },
-  {
-    title: "chirp",
-    description: "twitter clone",
-    technologies: ["TS"],
-    href: "https://chirp.s12k.de/",
-  },
-  {
-    title: "tic tac toe",
-    description: "realtime multiplayer online tic tac toe",
-    technologies: ["TS"],
-    href: "https://tictactoe.s12k.de/",
-  },
-];
 ---
 
 <Layout>

@@ -1,0 +1,18 @@
+---
+// src/components/Icon.astro
+import type { SimpleIcon } from "simple-icons";
+
+interface Props {
+  icon: SimpleIcon;
+  className?: string;
+}
+
+const { icon, className } = Astro.props;
+---
+
+<div class={className}>
+  <svg role="img" viewBox="0 0 24 24" fill="currentColor">
+    <title>{icon.title}</title>
+    <path d={icon.path}></path>
+  </svg>
+</div>
