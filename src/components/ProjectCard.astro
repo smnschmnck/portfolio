@@ -33,10 +33,10 @@ const { project } = Astro.props;
     </div>
     <a
       href={project.href}
-      class="flex h-10 items-center justify-center gap-2 rounded-lg bg-black px-4 text-white transition hover:bg-zinc-700"
+      class="group flex h-10 items-center justify-center gap-2 rounded-lg bg-black px-4 text-white transition hover:bg-zinc-700"
     >
       <span>view</span>
-      <ArrowRight size={18} />
+      <ArrowRight size={18} class="transition group-hover:translate-x-1.5" />
     </a>
   </div>
 </div>
