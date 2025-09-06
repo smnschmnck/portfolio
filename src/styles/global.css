@@ -3,5 +3,5 @@
 @theme {
   --font-sans: "Outfit Variable", sans-serif;
 
-  --grid-template-columns-auto-fill: repeat(auto-fill, minmax(20rem, 1fr));
+  --grid-template-columns-auto-fill-20: repeat(auto-fill, minmax(20rem, 1fr));
 }
