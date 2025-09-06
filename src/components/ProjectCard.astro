@@ -1,8 +1,8 @@
 ---
 import { ArrowRight } from "@lucide/astro/icons/index";
-import type { Project } from "../types/project";
 import { technologies } from "../data/technologies";
 import Icon from "./ui/Icon.astro";
+import type { Project } from "../data/projects";
 
 interface Props {
   project: Project;
@@ -33,6 +33,8 @@ const { project } = Astro.props;
     </div>
     <a
       href={project.href}
+      target="_blank"
+      rel="noopener noreferrer"
       class="group flex h-10 items-center justify-center gap-2 rounded-lg bg-black px-4 text-white transition hover:bg-zinc-700"
     >
       <span>view</span>
