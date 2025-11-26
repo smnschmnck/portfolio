@@ -9,6 +9,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "TV Stats",
+    description: "IMDb episode ratings at a glance",
+    technologies: ["ts", "astro", "tailwind", "sqLite"],
+    href: "https://tvstats.app",
+  },
+  {
     title: "emyht",
     description: "realtime chat application",
     technologies: ["ts", "go", "react", "pusher", "postgres", "tailwind"],

@@ -1,4 +1,5 @@
 import {
+  siAstro,
   siCloudflare,
   siGo,
   siHtmx,
@@ -6,6 +7,7 @@ import {
   siPostgresql,
   siPusher,
   siReact,
+  siSqlite,
   siSvelte,
   siTailwindcss,
   siTypescript,
@@ -37,6 +39,10 @@ export const technologies = {
     icon: siHtmx,
     name: "htmx",
   },
+  astro: {
+    icon: siAstro,
+    name: "astro",
+  },
   svelte: {
     icon: siSvelte,
     name: "svelte",
@@ -48,6 +54,10 @@ export const technologies = {
   postgres: {
     icon: siPostgresql,
     name: "postgresql",
+  },
+  sqLite: {
+    icon: siSqlite,
+    name: "sqLite",
   },
   tailwind: {
     icon: siTailwindcss,
