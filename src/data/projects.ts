@@ -9,7 +9,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "TV Stats",
+    title: "tv stats",
     description: "IMDb episode ratings at a glance",
     technologies: ["ts", "astro", "tailwind", "sqLite"],
     href: "https://tvstats.app",
